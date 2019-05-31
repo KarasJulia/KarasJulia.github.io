@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .sidebar {
+    background-color: #333;
+    box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.7);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+
+}
+
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+}
+
+.sidebar input,
+.sidebar button {
+    text-align: center;
+    width: 60px;
+}
+
+.sidebar li:last-of-type {
+    margin-top: auto;
+}
+
+.sidebar button {
+    background-color: black;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.sidebar label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+    </style>
+
+  </head>
+  <body>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia's and Anna's Drawing App</title>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <div class="sidebar">
+    <ul>
+        <li>
+            <label for="mycolor">Color:</label>
+            <input type="color" id="mycolor" />
+        </li>
+            <button onclick="window.location.href = 'https://ide50-karasjulia.legacy.cs50.io:8081/finalstuff.html';">Clear</button>
+        </li>
+    </ul>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.js"></script>
+    <script src="final.js"></script>
+  </body>
+</html>
